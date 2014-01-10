@@ -4,7 +4,7 @@
  * Plugin URI: http://wordpress.org/plugins/seamless-sticky-custom-post-types/
  * Description: Extends the native sticky post functionality to custom post types in a way that is identical to default posts.
  * Author: Jascha Ephraim
- * Version: 1.2
+ * Version: 1.3
  * Author URI: http://jaschaephraim.com/
  * License: GPL2
  *
