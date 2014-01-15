@@ -1,13 +1,13 @@
 # Seamless Sticky Custom Post Types #
 
-Contributors: jaschaephraim
-Donate link: http://jaschaephraim.com/
-Tags: sticky, custom post type
-Requires at least: 3.0.1
-Tested up to: 3.8
-Stable tag: 1.3
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Contributors: jaschaephraim  
+Donate link: http://jaschaephraim.com/  
+Tags: sticky, custom post type  
+Requires at least: 3.0.1  
+Tested up to: 3.8  
+Stable tag: 1.3  
+License: GPLv2 or later  
+License URI: http://www.gnu.org/licenses/gpl-2.0.html  
 
 Extends the native sticky post functionality to custom post types in a way that is identical to default posts.
 
