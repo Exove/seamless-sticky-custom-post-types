@@ -30,7 +30,7 @@ function sscpt_admin_enqueue_scripts() {
 	$screen = get_current_screen();
 
 	// Only continue if this is an edit screen for a custom post type
-	if ( !in_array( $screen->base, array( 'post', 'edit' ) ) || in_array( $screen->post_type, array( 'post', 'page' ) ) )
+	if ( !in_array( $screen->base, array( 'post', 'edit' ) ) || in_array( $screen->post_type, array( 'post' ) ) )
 		return;
 
 	// Editing an individual custom post
