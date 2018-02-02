@@ -29,9 +29,23 @@ function sscpt_admin_enqueue_scripts() {
 
 	$screen = get_current_screen();
 
+	$default_post_types = array( 'post' );
+
+	$allowed_post_types = apply_filters('sscpt_allowed_post_types', $default_post_types);
+
+	if ( $allowed_post_types === $default_post_types ) {
+		// if still 'post', allow all post types to be sticky
+		$allowed_post_types = get_post_types( array( 
+			'public' => true, 
+			'_builtin' => false 
+		) );
+	}
+
 	// Only continue if this is an edit screen for a custom post type
-	if ( !in_array( $screen->base, array( 'post', 'edit' ) ) || in_array( $screen->post_type, array( 'post' ) ) )
+	if ( 
+		!in_array( $screen->base, array( 'post', 'edit' ) ) || !in_array( $screen->post_type, $allowed_post_types ) ) {
 		return;
+	}
 
 	// Editing an individual custom post
 	if ( $screen->base == 'post' ) {
