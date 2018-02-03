@@ -1,5 +1,5 @@
 {
-  "name": "certainlyakey/seamless-sticky-custom-post-types",
+  "name": "Exove/seamless-sticky-custom-post-types",
   "description": "Extends the native sticky post functionality to custom post types in a way that is identical to default posts",
   "type": "wordpress-plugin",
   "minimum-stability": "dev",
